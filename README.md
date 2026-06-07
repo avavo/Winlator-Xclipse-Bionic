@@ -1,41 +1,33 @@
-# Winlator Xclipse Bionic
+# WinXclipse v0.4
 
-Winlator Xclipse Bionic, ou WXB, é um projeto experimental focado em adaptar builds do Winlator/CMOD para dispositivos Samsung Exynos com GPU Xclipse.
+Base: **Winlator Cmod v13.1.1 oficial**
 
-## Status atual
+Esta versão continua usando patch binário seguro sobre o APK oficial do CMOD, preservando todos os arquivos `classes*.dex` para evitar erros de checksum e crashes no Android.
 
-- Versão: WXB v0.1
-- Base: Winlator Cmod v13.1.1 oficial
-- Package atual: `com.winlator.cmod`
-- Nome visual atual: `Winlator WXB!`
-- Método: patch binário seguro no APK oficial
-- Status: abre e funciona
+## Mudanças
 
-## Método da v0.1
+- Nome visual ajustado para **WinXclipse**
+- Ícone WinXclipse aplicado
+- Versão visual ajustada para **Version WinX-v0.4**
+- Scripts de patch/build v0.4 adicionados
+- Método seguro mantido, sem modificar `classes*.dex`
 
-A v0.1 usa o APK oficial funcional do Winlator Cmod v13.1.1 como base.
+## Validação
 
-O patch altera apenas strings fora dos arquivos `classes*.dex`.
+Testado no dispositivo:
 
-Isso é importante porque alterar diretamente arquivos DEX quebra o checksum interno e causa crash no Android.
+- Criação de container: OK
+- Abertura de container: OK
+- Persistência do container após fechar e abrir o app: OK
 
-Fluxo usado:
+## Notas conhecidas
 
-1. usar o APK oficial como base;
-2. substituir `Winlator Cmod` por `Winlator WXB!`;
-3. não alterar `classes*.dex`;
-4. remover assinatura antiga;
-5. aplicar `zipalign`;
-6. assinar novamente.
-
-## Objetivo
-
-Criar uma base organizada para testes em Exynos/Xclipse, com foco futuro em presets, documentação, integração com MdiEx/ExynosTools e ajustes voltados para compatibilidade.
+- O package ainda é `com.winlator.cmod`
+- O cabeçalho principal ainda pode mostrar `Winlator Cmod`
+- Alguns créditos originais permanecem porque estão dentro de `classes*.dex`
+- Android pode mostrar avisos de app feito para versão antiga, app depurável ou compatibilidade 16 KB, herdados da base CMOD
 
 ## Aviso
 
-Projeto experimental. Nada aqui promete desempenho, estabilidade ou compatibilidade universal.
-
-## Créditos
-
-Baseado no trabalho do Winlator, Winlator CMOD e seus respectivos desenvolvedores/contribuidores.
+Projeto experimental.  
+Não há promessa de ganho de desempenho, compatibilidade universal ou estabilidade garantida.
