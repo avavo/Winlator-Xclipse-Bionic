@@ -110,3 +110,41 @@ Known limitations:
 
 Current status:
 - WinXclipse v0.4 is functional and suitable for release.
+
+## WinXclipse v0.5 - Wrapper-LG
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Base: Winlator Cmod v13.1.1 oficial
+- Nome visual: WinXclipse
+- Package mantido: com.winlator.cmod
+- Método: patch binário seguro, sem recompilar resources e sem alterar classes*.dex
+- Menu principal Graphics Driver:
+  - Wrapper
+  - Wrapper-LG
+- Wrapper-LG usa o Leegao ETC2 como libvulkan_wrapper.so
+- O pacote foi montado usando o wrapper.tzst original como base
+- Estrutura preservada:
+  - usr/lib/libadrenotools.so
+  - usr/lib/libfile_redirect_hook.so
+  - usr/lib/libgsl_alloc_hook.so
+  - usr/lib/libhook_impl.so
+  - usr/lib/libmain_hook.so
+  - usr/lib/libvulkan_wrapper.so
+  - usr/share/vulkan/icd.d/wrapper_icd.aarch64.json
+- Compressão correta: Zstandard
+- Caminho final dentro do APK:
+  - assets/graphics_driver/wrapper-lg.tzst
+
+Validação:
+
+- A opção Wrapper-LG aparece no menu Graphics Driver
+- O app chama graphics_driver/wrapper-lg.tzst
+- A extração não apresenta mais erro de decompressão/Unknown frame descriptor
+- Ainda precisa de teste maior com jogos e apps Vulkan/DXVK
+
+Observação:
+
+Wrapper-LG substitui temporariamente Wrapper-v2 no menu, porque o build de resources via apktool/aapt2 está falhando com exit code 139. Essa solução evita rebuild de resources e mantém o patch mais seguro.
