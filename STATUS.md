@@ -31,11 +31,17 @@ O primeiro patch direto alterou `classes8.dex`, causando erro de checksum e cras
 
 Refazer o patch pulando todos os arquivos `classes*.dex`.
 
+## Atualização v0.2.1
+
+- Ícone WXB aplicado.
+- Padding ajustado para evitar zoom excessivo no Android.
+- APK gerado como `Winlator-Xclipse-v0.2.1.apk`.
+
 ## Próximos passos
 
 1. Validar criação de container.
 2. Criar script automático do patch.
-3. Trocar ícone.
+3. Ajustar tela About/créditos.
 4. Ajustar tela About/créditos.
 5. Pensar em package próprio.
 6. Estudar integração futura com MdiEx/ExynosTools.
