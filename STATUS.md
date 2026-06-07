@@ -91,3 +91,22 @@ Known remaining issue:
 
 Current status:
 - WinXclipse v0.3.1 is suitable for release.
+
+
+## WinXclipse v0.4 Validation
+
+Validation passed.
+
+Changes:
+- About version updated to `Version WinX-v0.4`.
+- WinXclipse icon retained.
+- v0.4 patch/build scripts added.
+- DEX files remain untouched.
+
+Known limitations:
+- Main header still shows `Winlator Cmod`.
+- Some About credits remain original because the strings are stored in `classes*.dex`.
+- DEX patching is intentionally avoided because direct modification breaks internal checksums and causes crashes.
+
+Current status:
+- WinXclipse v0.4 is functional and suitable for release.
