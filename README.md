@@ -81,3 +81,39 @@ Essa versão mantém a base do Winlator Cmod v13.1.1 e usa patch binário seguro
 Experimental funcional.
 
 A extração de graphics_driver/wrapper-lg.tzst foi validada sem erro de decompressão. Ainda precisa de testes maiores em containers, DXVK, Zink e jogos.
+
+## WinXclipse v0.6 MultiWrapper
+
+A v0.6 adiciona suporte MultiWrapper em um único APK.
+
+Essa versão mantém a base do Winlator Cmod v13.1.1, mas expande o menu principal de Graphics Driver para incluir múltiplas opções de wrapper.
+
+### Wrappers disponíveis
+
+- Wrapper
+- Wrapper-v2
+- Wrapper-LG
+- Wrapper-1E
+- Wrapper-2E
+- Wrapper-KI
+
+### Caminhos internos
+
+- Wrapper-LG usa assets/graphics_driver/wrapper-lg.tzst
+- Wrapper-1E usa assets/graphics_driver/wrapper-1e.tzst
+- Wrapper-2E usa assets/graphics_driver/wrapper-2e.tzst
+- Wrapper-KI usa assets/graphics_driver/wrapper-ki.tzst
+
+### Implementação
+
+- A lista de Graphics Driver foi expandida via smali
+- Os pacotes .tzst foram criados a partir do wrapper.tzst original
+- Apenas usr/lib/libvulkan_wrapper.so muda em cada variante
+- A estrutura original do wrapper foi preservada
+- Nome visual e logo foram corrigidos para WinXclipse
+
+### Status
+
+Experimental funcional.
+
+Os wrappers LG, 1E, 2E e KI foram validados na etapa de extração. Ainda são necessários testes maiores com jogos, DXVK, Zink e cargas Vulkan reais.

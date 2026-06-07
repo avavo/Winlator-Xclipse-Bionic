@@ -148,3 +148,52 @@ Validação:
 Observação:
 
 Wrapper-LG substitui temporariamente Wrapper-v2 no menu, porque o build de resources via apktool/aapt2 está falhando com exit code 139. Essa solução evita rebuild de resources e mantém o patch mais seguro.
+
+## WinXclipse v0.6 - MultiWrapper
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Base: Winlator Cmod v13.1.1
+- Nome visual corrigido para WinXclipse
+- Logo e About corrigidos
+- Package mantido: com.winlator.cmod
+- Menu principal Graphics Driver agora inclui múltiplos wrappers:
+  - Wrapper
+  - Wrapper-v2
+  - Wrapper-LG
+  - Wrapper-1E
+  - Wrapper-2E
+  - Wrapper-KI
+
+Implementação:
+
+- Lista do menu Graphics Driver expandida via smali
+- Sem depender de rebuild limpo de resources via aapt2
+- Build feito com apktool usando aapt1 após correção dos PNGs problemáticos
+- Packs wrapper montados com base no wrapper.tzst original
+- Estrutura preservada em todos os wrappers:
+  - usr/lib/libadrenotools.so
+  - usr/lib/libfile_redirect_hook.so
+  - usr/lib/libgsl_alloc_hook.so
+  - usr/lib/libhook_impl.so
+  - usr/lib/libmain_hook.so
+  - usr/lib/libvulkan_wrapper.so
+  - usr/share/vulkan/icd.d/wrapper_icd.aarch64.json
+
+Wrappers adicionados:
+
+- Wrapper-LG -> assets/graphics_driver/wrapper-lg.tzst
+- Wrapper-1E -> assets/graphics_driver/wrapper-1e.tzst
+- Wrapper-2E -> assets/graphics_driver/wrapper-2e.tzst
+- Wrapper-KI -> assets/graphics_driver/wrapper-ki.tzst
+
+Validação:
+
+- Wrapper-LG extraindo corretamente
+- Wrapper-1E extraindo corretamente
+- Wrapper-2E extraindo corretamente
+- Wrapper-KI extraindo corretamente
+- Sem erro de decompression/Unknown frame descriptor nos packs testados
+- Ainda precisa de testes maiores em jogos, DXVK, Zink e runtime Vulkan
