@@ -54,3 +54,21 @@ Refazer o patch pulando todos os arquivos `classes*.dex`.
 - APK gerado como `Winlator-Xclipse-v0.2.1.apk`.
 - Método seguro mantido: sem alterar `classes*.dex`.
 
+
+
+## WinXclipse v0.3 Validation
+
+Validation passed on device.
+
+Tested:
+- Container creation: OK
+- Container launch: OK
+- App close/reopen: OK
+- Container persistence after restart: OK
+
+Known Android warnings:
+- Android may warn that the app was made for an older Android version because the base uses targetSdkVersion 28.
+- Android may show that the app was installed via ADB when installed through adb.
+
+Current status:
+- WinXclipse v0.3 is functional and suitable for release.
