@@ -45,3 +45,12 @@ Refazer o patch pulando todos os arquivos `classes*.dex`.
 4. Ajustar tela About/créditos.
 5. Pensar em package próprio.
 6. Estudar integração futura com MdiEx/ExynosTools.
+
+
+## WXB v0.2.1
+
+- Ícone WXB aplicado.
+- Padding do ícone ajustado para evitar zoom excessivo no Android.
+- APK gerado como `Winlator-Xclipse-v0.2.1.apk`.
+- Método seguro mantido: sem alterar `classes*.dex`.
+
