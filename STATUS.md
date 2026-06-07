@@ -72,3 +72,22 @@ Known Android warnings:
 
 Current status:
 - WinXclipse v0.3 is functional and suitable for release.
+
+
+## WinXclipse v0.3.1 Validation
+
+Validation passed.
+
+Changes:
+- About title shows `WinXclipse`.
+- About version shows `Version WinX-v0.3`.
+- Icon remains applied with corrected padding.
+- Container creation works.
+- Container launch works.
+- Container persists after app restart.
+
+Known remaining issue:
+- Main header may still show `Winlator Cmod`, likely from a DEX-side string or unsafe resource path. It is intentionally left unchanged to avoid breaking the APK.
+
+Current status:
+- WinXclipse v0.3.1 is suitable for release.

@@ -15,10 +15,17 @@ out_apk = Path(sys.argv[3])
 # Winlator Cmod = 13 chars
 # WinXclipse + 3 espaços = 13 chars
 replacements = {
+    # App/about name. Same length as original.
     "Winlator Cmod": "WinXclipse   ",
     "Winlator CMOD": "WinXclipse   ",
-    "Version Cmod-v13.1": "Version WinX v0.3 ",
-    "Version 7.1.4x-cmod": "Version WinX v0.3  ",
+
+    # Version labels. Same length as original.
+    "Version Cmod-v13.1": "Version WinX-v0.3 ",
+    "Version 7.1.4x-cmod": "Version WinX-v0.3  ",
+    "Cmod-v13.1": "WinX-v0.3 ",
+
+    # Credit/additional branding, only if found outside DEX.
+    "Winlator Cmod by": "WinXclipse by   ",
 }
 
 sizes = {
