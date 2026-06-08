@@ -242,3 +242,19 @@ Status: experimental funcional.
 - assets/contents.json atualizado para baixar FEXCore pela release
 - Download e instalação do FEXCore testados com sucesso
 - Branding/ícones corrigidos após rebuild
+
+## WinXclipse v0.8.0 - Runtime + Identity Base
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Package name alterado para com.win.xclipse
+- WinXclipse agora pode ser instalado lado a lado com Cmod
+- FEXCore 2601-aabdded adicionado via GitHub Release
+- FEXCore 2605 adicionado via GitHub Release
+- assets/contents.json atualizado para FEXCore remoto
+- Download e instalação do FEXCore testados com sucesso
+- Texto antigo de Qualcomm/Adreno removido da instalação de drivers
+- Branding e logos corrigidos após rebuild
+- Xclipse GPU Drivers mantido
