@@ -197,3 +197,24 @@ Validação:
 - Wrapper-KI extraindo corretamente
 - Sem erro de decompression/Unknown frame descriptor nos packs testados
 - Ainda precisa de testes maiores em jogos, DXVK, Zink e runtime Vulkan
+
+## WinXclipse v0.7 - Driver cleanup
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Drivers Snapdragon/Turnip ocultados do menu de versão de wrapper graphics driver
+- Removidas do menu as entradas:
+  - v762
+  - v805
+  - turnip25.1.0
+  - turnip25.3.0_R3_Auto
+  - turnip25.3.0_R3_Gmem
+- MultiWrapper mantido
+- Branding atualizado para WinXclipse v0.7
+- Foco mantido em Exynos/Xclipse
+
+Observação:
+
+Nesta etapa os drivers foram ocultados/removidos do menu primeiro. A remoção definitiva dos arquivos .tzst antigos do APK deve ser feita apenas após validação completa.
