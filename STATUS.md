@@ -258,3 +258,21 @@ Mudanças principais:
 - Texto antigo de Qualcomm/Adreno removido da instalação de drivers
 - Branding e logos corrigidos após rebuild
 - Xclipse GPU Drivers mantido
+
+## WinXclipse v0.8.0 - Runtime + Identity Base
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Package name alterado para com.win.xclipse
+- WinXclipse agora pode ser instalado lado a lado com Cmod
+- Nome do app corrigido para WinXclipse
+- Branding, ícones e About corrigidos
+- Texto antigo de Qualcomm/Adreno removido da instalação de drivers
+- Xclipse GPU Drivers mantido
+- FEXCore 2601-aabdded via GitHub Release
+- FEXCore 2605 via GitHub Release
+- Wine/Proton 10 arm64ec via GitHub Release
+- Wine/Proton 11.0-1 arm64ec via GitHub Release
+- Download e instalação dos runtimes testados com sucesso
