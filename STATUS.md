@@ -218,3 +218,16 @@ Mudanças principais:
 Observação:
 
 Nesta etapa os drivers foram ocultados/removidos do menu primeiro. A remoção definitiva dos arquivos .tzst antigos do APK deve ser feita apenas após validação completa.
+
+## WinXclipse v0.7.5 - Identity update
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Renomeado Adrenotools GPU Drivers para Xclipse GPU Drivers
+- Adicionado crédito WinXclipse patch/mod by avavo / Álvaro
+- Créditos originais mantidos
+- MultiWrapper mantido
+- Branding WinXclipse preservado
+- Foco reforçado em Exynos/Xclipse
