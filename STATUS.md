@@ -276,3 +276,15 @@ Mudanças principais:
 - Wine/Proton 10 arm64ec via GitHub Release
 - Wine/Proton 11.0-1 arm64ec via GitHub Release
 - Download e instalação dos runtimes testados com sucesso
+
+## WinXclipse v0.8.5 - Driver Delivery Manual
+
+Status: em desenvolvimento.
+
+Planejado:
+
+- Usar MdiEx v3.2 como fonte oficial de drivers/wrappers externos
+- Documentar instalação manual via Xclipse GPU Drivers
+- Manter drivers principais embutidos por enquanto
+- Avaliar botão/link para a release da MdiEx
+- Não adicionar downloader interno ainda
