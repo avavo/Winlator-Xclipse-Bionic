@@ -288,3 +288,20 @@ Planejado:
 - Manter drivers principais embutidos por enquanto
 - Avaliar botão/link para a release da MdiEx
 - Não adicionar downloader interno ainda
+
+## WinXclipse v0.8.5 - Driver Delivery Manual
+
+Status: experimental funcional.
+
+Mudanças principais:
+
+- Adicionado link para a release MdiEx v3.2 na tela Xclipse GPU Drivers
+- Fonte dos drivers: https://github.com/avavo/MdiEx/releases/tag/V3.2
+- Install Drivers continua abrindo o seletor de arquivos
+- Fluxo manual: baixar driver pela release e instalar pelo app
+
+Planejado para v0.9.0:
+
+- Botão para baixar drivers direto pelo app
+- Instalação automática após download
+- Lista remota de drivers via JSON
