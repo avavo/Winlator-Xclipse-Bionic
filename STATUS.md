@@ -231,3 +231,14 @@ Mudanças principais:
 - MultiWrapper mantido
 - Branding WinXclipse preservado
 - Foco reforçado em Exynos/Xclipse
+
+## WinXclipse v0.8.0 - FEXCore runtime delivery
+
+Status: experimental funcional.
+
+- Repositório atualizado para WinXclipse
+- FEXCore 2601-aabdded publicado via GitHub Release
+- FEXCore 2605 publicado via GitHub Release
+- assets/contents.json atualizado para baixar FEXCore pela release
+- Download e instalação do FEXCore testados com sucesso
+- Branding/ícones corrigidos após rebuild
